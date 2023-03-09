@@ -1,0 +1,24 @@
+﻿@model AkademiPlus_Transportation.Models.TblEmployee
+@{
+    ViewBag.Title = "AddEmployee";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+
+<h2>Yeni Çalışan Girişi</h2>
+<form method="post">
+    <label>Çalışan Adı</label>
+    @Html.TextBoxFor(x => x.EmployeeName, new { @class = "form-control" })
+    <br />
+    <label>Çalışan Soyadı</label>
+    @Html.TextBoxFor(x => x.EmployeeSurname, new { @class = "form-control" })
+    <br />
+
+    <label>Çalışan Görseli</label>
+    @Html.TextBoxFor(x => x.Employeeimage, new { @class = "form-control" })
+    <br />
+    <label>Çalışan Bilgileri</label>
+    @Html.TextAreaFor(x => x.EmployeeDescription, 5, 1, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Yeni Çalışan Ekle</button>
+</form>

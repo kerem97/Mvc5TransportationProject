@@ -1,0 +1,34 @@
+﻿@model List<AkademiPlus_Transportation.Models.TblContact>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<h2>Gelen Mesajlar</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Gönderen</th>
+        <th>Konu</th>
+        <th>Email</th>
+        <th>Telefon No</th>
+        <th>Mesaj</th>
+        <th>Sil</th>
+       
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ContactID</td>
+            <td>@x.Name</td>
+            <td>@x.Subject</td>
+            <td>@x.Email</td>
+            <td>@x.Phone</td>
+            <td>@x.Message</td>
+            <td><a href="/Contact/DeleteContact/@x.ContactID" class="btn btn-danger">Sil</a></td>
+          
+        </tr>
+    }
+</table>
+

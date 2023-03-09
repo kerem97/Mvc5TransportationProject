@@ -1,0 +1,19 @@
+﻿@model AkademiPlus_Transportation.Models.TblCategory
+@{
+    ViewBag.Title = "UpdateCategory";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<h2>UpdateCategory</h2>
+
+<form method="post">
+    <br />
+    @*<label>KategoriID</label>*@
+    @Html.HiddenFor(x => x.CategoryID)
+    <br />
+    <label>Kategori Adı</label>
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+
+</form>

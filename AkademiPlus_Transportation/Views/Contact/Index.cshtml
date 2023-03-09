@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+<div class="inner-banner py-5">
+    <section class="w3l-breadcrumb text-left py-sm-5 ">
+        <div class="container">
+            <div class="w3breadcrumb-gids">
+                <div class="w3breadcrumb-left text-left">
+                    <h2 class="inner-w3-title mt-lg-5 mt-4">
+                        Bize Ulaşın
+                    </h2>
+
+                </div>
+                <div class="w3breadcrumb-right">
+                    <ul class="breadcrumbs-custom-path">
+                        <li><a href="/Default/Index">Ana Sayfa</a></li>
+                        <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Contact</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<!--//inner-page-->
+<!-- contacts-5-grid -->
+<div class="w3l-contact-10 py-5" id="contact">
+    <div class="form-41-mian pt-md-5 pt-3">
+        <div class="container">
+            <div class="row contacts-5-grid-main mb-5">
+                <div class="col-lg-6 contacts-5-grid pe-lg-5">
+                    <h5 class="title-subw3hny">Formu Doldurarak Bize Ulaşabilirsiniz</h5>
+                    <h3 class="title-w3l mb-3">Ekibimize Ulaşın</h3>
+                    <p>Tüm sorularınız,önerileriniz,şikayetleriniz ve daha detaylı bilgiye ihtiyaç duyduğunuz konularda bize ulaşabilirsiniz.</p>
+
+                    <h4 class="title-w3l-adinf mt-4">7/24 Destek Hattı</h4>
+                    <div class="address-grid d-flex">
+                        <i class="fas fa-headset mt-2"></i>
+                        <p><a href="tel:+12 324-016-694" class="link1">+12 324-016-694</a></p>
+                    </div>
+                    <div class="address-grid d-flex">
+                        <i class="fas fa-envelope"></i>
+                        <p class="mt-0"><a href="mailto:mail@example.com" class="link1">Office@example.com</a></p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 form-inner-cont mt-lg-0 mt-4">
+                    <form  method="post" class="signin-form">
+                        <div class="form-grids">
+                            <div class="form-input">
+                                <input type="text" name="Name" id="w3lName" placeholder="Adınız *" required="" />
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="Subject" id="w3lSubject" placeholder="Konu " required />
+                            </div>
+                            <div class="form-input">
+                                <input type="email" name="Email" id="w3lSender" placeholder="Mail Adresiniz *" required />
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="Phone" id="w3lPhone" placeholder="Telefon Numaranız *" required />
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <textarea name="Message" id="w3lMessage" placeholder="Mesajınız" required=""></textarea>
+                        </div>
+                        <div class="w3-submit text-right">
+                            <button class="btn btn-style btn-primary">Gönder <i class="fas fa-paper-plane ms-2"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //contacts-5-grid -->
+</div>
+

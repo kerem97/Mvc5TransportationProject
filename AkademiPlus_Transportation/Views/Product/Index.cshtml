@@ -1,0 +1,38 @@
+﻿@model List<AkademiPlus_Transportation.Models.TblProduct>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    int sayac = 0;
+}
+
+
+<h2>Ürün Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ürün Adı</th>
+        <th>Ürün Paketleme Şekli</th>
+        <th>Ürün Adeti</th>
+        <th>Ürün Açıklaması</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        sayac++;
+        <tr>
+            <td>@sayac</td>
+            <td>@x.ProductName</td>
+            <td>@x.ProductSizeType</td>
+            <td>@x.ProductSize</td>
+            <td>@x.ProductDescription</td>
+            <td><a href="/Product/DeleteProduct/@x.ProductID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Product/UpdateProduct/@x.ProductID" class="btn btn-info">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+<a href="/Product/AddProduct/" class="btn btn-primary">Yeni Ürün Ekle</a>

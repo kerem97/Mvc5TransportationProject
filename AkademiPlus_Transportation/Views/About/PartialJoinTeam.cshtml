@@ -1,0 +1,43 @@
+﻿@model List<AkademiPlus_Transportation.Models.TblEmployee>
+
+<section class="w3l-team-main team py-5" id="team">
+    <div class="container py-lg-5">
+        <div class="title-content text-center mb-2">
+
+            <h3 class="title-w3l">Uzman Ekibimiz</h3>
+        </div>
+        <div class="row team-row justify-content-center">
+
+            @foreach (var x in Model)
+            {
+                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
+                    <div class="team-member text-center">
+                        <div class="team-img">
+                            <img src="@x.Employeeimage" alt="" class="radius-image">
+                            <div class="overlay-team">
+                                <div class="team-details text-center">
+                                    <div class="socials mt-20">
+                                        <a href="#url">
+                                            <span class="fab fa-facebook-f"></span>
+                                        </a>
+                                        <a href="#url">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                        <a href="#url">
+                                            <span class="fab fa-linkedin-in"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#url" class="team-title">@x.EmployeeName @x.EmployeeSurname</a>
+                        <p>@x.EmployeeTitle</p>
+
+                    </div>
+                </div>
+            }
+            <!-- end team member -->
+        </div>
+
+    </div>
+</section>

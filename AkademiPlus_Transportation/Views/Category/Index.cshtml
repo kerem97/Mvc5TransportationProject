@@ -1,0 +1,31 @@
+﻿@using AkademiPlus_Transportation.Models
+@model List<TblCategory>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<h2>Kategori Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Kategori Adı</th>
+        <th>Detaylar</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+<tr>
+    <td>@x.CategoryID</td>
+    <td>@x.CategoryName</td>
+    <td>#</td>
+    <td><a class="btn btn-success">Detaylar</a></td>
+    <td><a class="btn btn-danger" href="/Category/DeleteCategory/@x.CategoryID">Sil</a></td>
+    <td><a class="btn btn-info" href="/Category/UpdateCategory/@x.CategoryID">Güncelle</a></td>
+
+</tr>
+    }
+</table>
+<a href="/Category/AddCategory" class="btn btn-primary">Yeni Kategori</a>

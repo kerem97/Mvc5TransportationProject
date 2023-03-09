@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8344b7e20952455d9919c29f9b7b54ca" Name="Diagram1">
+        <EntityTypeShape EntityType="DbTransportModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTransportModel.TblCategory" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTransportModel.TblCustomer" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTransportModel.TblEmployee" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTransportModel.TblProcess" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTransportModel.TblProduct" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTransportModel.Tbl_About" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DbTransportModel.Tbl_Services" Width="1.5" PointX="3.375" PointY="6.75" />
+        <EntityTypeShape EntityType="DbTransportModel.tbl_Admin" Width="1.5" PointX="5.375" PointY="6.75" />
+        <AssociationConnector Association="DbTransportModel.FK_TblProduct_TblCategory" />
+        <EntityTypeShape EntityType="DbTransportModel.TblQuestions" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DbTransportModel.TblOffers" Width="1.5" PointX="7.375" PointY="4.75" />
+        <EntityTypeShape EntityType="DbTransportModel.TblContact" Width="1.5" PointX="7.375" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

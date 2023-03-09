@@ -1,0 +1,27 @@
+﻿@model AkademiPlus_Transportation.Models.TblProduct
+
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<h2>Yeni Ürün Ekleme</h2>
+<br />
+<form method="post">
+    <label>Ürün Adı</label>
+    @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+    <br />
+    <label>Paketleme Türü</label>
+    @Html.TextBoxFor(x => x.ProductSizeType, new { @class = "form-control" })
+    <br />
+    <label>Ürün Miktarı </label>
+    @Html.TextBoxFor(x => x.ProductSize, new { @class = "form-control" })
+    <br />
+    <label>Ürün Bilgileri</label>
+    @Html.TextAreaFor(x => x.ProductDescription, 5, 1, new { @class = "form-control" })
+    <br />
+    <label>Ürün Bilgileri</label>
+    @Html.DropDownListFor(x => x.ProductCategory, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Yeni Çalışan Ekle</button>
+</form>
